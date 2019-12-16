@@ -4,7 +4,7 @@ import {useParams, Link} from 'react-router-dom';
 import MovieCard from './MovieCard'
 
 const Movie = (props) => {
-  const [movie, setMovie] = useState();
+  const [movie, setMovie,] = useState();
   const {id} = useParams();
 
  
@@ -24,6 +24,7 @@ const Movie = (props) => {
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
+
     addToSavedList(movie)
   }
 
