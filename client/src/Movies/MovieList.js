@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const MovieList = props => {
   const [movies, setMovies] = useState([])
+
+  
   useEffect(() => {
     const getMovies = () => {
       axios
